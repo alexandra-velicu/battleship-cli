@@ -36,7 +36,7 @@ Link towards the commit where I added the test file Player.populateShips.test.js
 
 Because I am using jest as a coverage tool, in order to find the coverage percentage of a function I have to use the coverage percentage formula:
 
-\[ \text{Coverage Percentage} = \left( \frac{\text{Number of Covered Lines}}{\text{Total Number of Lines}} \right) \times 100 \]
+Coverage Percentage = (Number of Covered Lines / Total Number of Lines) * 100 
 
 - **Number of Covered Lines**: Number of lines in the code that have been executed by the test suite.
 - **Total Number of Lines**: Total number of lines in the function or file being measured for coverage.
@@ -46,8 +46,8 @@ Bellow is a screenshot of the function in the html coverage report I generated (
 ![Alt Text](populateShips.png)
 
 As it can be seen all lines have been covered after creating the test file Player.populateShips.test.js.
-Coverage percentage:
-\[ \text{Coverage Percentage} = \left( \frac{6}{6} \right) \times 100 = 100\% \]
+
+Coverage Percentage = (6 / 6) * 100 = 100%
 
 - **Coverage Improvement**: Improved from 0% to 100%.
 - **Elaboration**: Initially, `populateShips` had no tests covering its functionality. By adding tests that now cover every line of the function, we ensure that ship initialization is thoroughly validated. This improvement helps prevent potential bugs related to ship setup in the game.
@@ -65,8 +65,7 @@ Bellow is a screenshot of the function in the html coverage report I generated b
 ![Alt Text](fireTorpedo.png)
 
 As it can be seen all lines have been covered after creating the test file Player.fireTorpedo.test.js.
-Coverage percentage:
-\[ \text{Coverage Percentage} = \left( \frac{11}{11} \right) \times 100 = 100\% \]
+Coverage Percentage = (11 / 11) * 100 = 100%
 
 - **Coverage Improvement**: Improved from 0% to 100%.
 - **Elaboration**: Initially, `fireTorpedo` had no test coverage, leaving its behavior unvalidated. By implementing dedicated test cases that cover each possible outcome (miss, repeat, hit), we now ensure that the function correctly updates the game board and provides accurate messages.
@@ -81,8 +80,8 @@ Bellow is a screenshot of the function in the html coverage report I generated b
 ![Alt Text](updateShip.png)
 
 As it can be seen all lines have been covered after creating the test file Player.updateShip.test.js.
-Coverage percentage:
-\[ \text{Coverage Percentage} = \left( \frac{14}{14} \right) \times 100 = 100\% \]
+
+Coverage Percentage = (14 / 14) * 100 = 100%
 
 - **Coverage Improvement**: Increased from 0% to 100%.
 - **Elaboration**: Initially, the `updateShip` function had no test coverage, leaving its behavior unverified. With the addition of a specific test case that verifies ship hit increments and sinking, we now validate the function's ability to update ship states accurately. Additionally, this test seems to cover the `increment` function found in Ship.js
@@ -97,8 +96,8 @@ Bellow is a screenshot of the function in the html coverage report I generated b
 ![Alt Text](updateBoard.png)
 
 As it can be seen all lines have been covered after creating the test file Player.updateBoard.test.js.
-Coverage percentage:
-\[ \text{Coverage Percentage} = \left( \frac{3}{3} \right) \times 100 = 100\% \]
+
+Coverage Percentage = (3 / 3) * 100 = 100%
 
 - **Coverage Improvement**: Increased from 0% to 100%.
 - **Elaboration**: Before testing, updateBoard lacked verification, risking errors. Now, tests confirm it correctly updates both player and opponent boards, ensuring reliable gameplay.
@@ -113,8 +112,9 @@ Bellow is a screenshot of the function in the html coverage report I generated b
 ![Alt Text](validateInstruction.png)
 
 As it can be seen after creating the test file Player.updateBoard.test.js almost all lines are covered with the exeption of 2 lines
-Coverage percentage:
-\[ \text{Coverage Percentage} = \left( \frac{8}{11} \right) \times 100 = 81.82\% \]
+
+Coverage Percentage = (8 / 11) * 100 = 81.82%
+
 
 - **Coverage Improvement**: Increased from 0% to 81.82%.
 - **Elaboration**: Previously, `validateInstruction` didn't have coverage for handling errors related to invalid coordinates and duplicate ship placements. Although improved, specific lines addressing these errors remain uncovered. Additional tests will be necessary to achieve complete coverage for all validation paths.
