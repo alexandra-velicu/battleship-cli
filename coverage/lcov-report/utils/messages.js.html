@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for utils/messages.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">utils</a> messages.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>3/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/6</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const { salmon } = require('../utils/helpers');
+const chalk      = require('chalk');
+&nbsp;
+module.exports = {
+    INVALID: {
+        DIRECTION: `Please enter a valid direction! e.g. ${salmon('Right')}, ${salmon('Left')}, ${salmon('Up')}, ${salmon('Down')}, or ${salmon('R')}, ${salmon('L')}, ${salmon('U')}, ${salmon('D')}\n`,
+        SHIP: `Please enter a valid ship: ${salmon('Battleship')}, ${salmon('Crusier')}, ${salmon('Carrier')}, ${salmon('Submarine')}, or ${salmon('Destroyer')}`,
+        COORDINATE: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >`Please enter a valid starting coordinate! i.e. A1-${require('../index').lastCoord}\n`</span>
+    },
+    P1: {
+        HIT_SHIP: 'You hit a ship!',
+        MISSED: 'Drats, you missed!',
+        SUNK_SHIP: 'You bastard! You sunk the computer\'s ',
+        LOST_TURN: salmon('You already guessed that space! I have zero sympathy, and you lose a turn.'),
+    },
+    CPU: {
+        HIT_SHIP: 'Uh oh. The computer hit your ',
+        SUNK_SHIP: 'Ha ha! The computer sunk your ',
+        MISSED: 'The computer missed. Hard to believe.',
+        LOST_TURN: 'Wow, the computer is wasting torpedoes, it already guessed that space!',
+    },
+    duplicatePlacement: <span class="fstat-no" title="function not covered" >fu</span>nction(ship) {
+<span class="cstat-no" title="statement not covered" >        return `You have already placed your ${ship.type.slice(0, 1).toUpperCase() + ship.type.slice(1)}!\n`</span>
+    },
+    outOfBounds: <span class="fstat-no" title="function not covered" >fu</span>nction(failureCoord) {
+<span class="cstat-no" title="statement not covered" >        return `${failureCoord} is either occupied or out of bounds! Please enter valid, unoccupied coordinates, i.e. A1-${require('../index').lastCoord}\n`;</span>
+    },
+    BUG_MESSAGE: 'Hey! You discovered a bug. Please take a screenshot of your last several moves and open an issue here: https://github.com/no-stack-dub-sack/battleship-cli/issues/new. Thanks!'
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jul 11 2024 14:24:49 GMT+0200 (Central European Summer Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
