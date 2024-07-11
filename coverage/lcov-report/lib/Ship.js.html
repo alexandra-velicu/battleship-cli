@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">9.09% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/11</span>
+        <span class='fraction'>11/11</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/3</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">9.09% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/11</span>
+        <span class='fraction'>11/11</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -69,46 +69,46 @@
 24
 25</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">165x</span>
+<span class="cline-any cline-yes">165x</span>
+<span class="cline-any cline-yes">165x</span>
+<span class="cline-any cline-yes">165x</span>
+<span class="cline-any cline-yes">165x</span>
+<span class="cline-any cline-yes">165x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class Ship {
-<span class="fstat-no" title="function not covered" >    co</span>nstructor(type, size, abbreviation) {
-<span class="cstat-no" title="statement not covered" >        this.hits = 0;</span>
-<span class="cstat-no" title="statement not covered" >        this.type = type;</span>
-<span class="cstat-no" title="statement not covered" >        this.size = size;</span>
-<span class="cstat-no" title="statement not covered" >        this.sunk = false;</span>
-<span class="cstat-no" title="statement not covered" >        this.placed = false;</span>
-<span class="cstat-no" title="statement not covered" >        this.abbreviation = abbreviation;</span>
+    constructor(type, size, abbreviation) {
+        this.hits = 0;
+        this.type = type;
+        this.size = size;
+        this.sunk = false;
+        this.placed = false;
+        this.abbreviation = abbreviation;
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    in</span>crementHits() {
-<span class="cstat-no" title="statement not covered" >        this.hits++;</span>
-<span class="cstat-no" title="statement not covered" >        this.sinkShip();</span>
+    incrementHits() {
+        this.hits++;
+        this.sinkShip();
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    si</span>nkShip() {
-<span class="cstat-no" title="statement not covered" >        if (this.hits === this.size) {</span>
-<span class="cstat-no" title="statement not covered" >            this.sunk = true;</span>
+    sinkShip() {
+        if (this.hits === this.size) {
+            this.sunk = true;
         }
     }
 &nbsp;
@@ -121,7 +121,7 @@ module.exports = Ship;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jul 11 2024 14:24:49 GMT+0200 (Central European Summer Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jul 11 2024 16:00:40 GMT+0200 (Central European Summer Time)
 </div>
 </div>
 <script src="../prettify.js"></script>
