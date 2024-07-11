@@ -108,7 +108,7 @@ As it can be seen all lines have been covered after creating the test file Playe
 Coverage Percentage = (3 / 3) * 100 = 100%
 
 - **Coverage Improvement**: Increased from 0% to 100%.
-- **Elaboration**: Before testing, updateBoard lacked verification, risking errors. Now, tests confirm it correctly updates both player and opponent boards, ensuring reliable gameplay.
+- **Elaboration**: Before testing, `updateBoard` lacked verification, risking errors. Now, tests confirm it correctly updates both player and opponent boards, ensuring reliable gameplay.
 
 <validateInstruction>
 
